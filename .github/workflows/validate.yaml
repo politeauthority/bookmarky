@@ -28,9 +28,11 @@ jobs:
           kustomize build kubernetes-manifests/envs/prod >> /dev/null
           kustomize build kubernetes-manifests/envs/stage >> /dev/null
           kustomize build kubernetes-manifests/envs/dev >> /dev/null
-      # - name: Install Dependancies
-      #   run: |
-      #     python3.11 -m pip install .
+
+      - name: Install Dependancies
+        run: |
+          ls -la
+          python3.11 -m pip install .
 
   # validate-pep8:
   #   runs-on: self-hosted

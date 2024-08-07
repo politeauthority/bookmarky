@@ -32,7 +32,7 @@ jobs:
       - name: Install Dependancies
         run: |
           ls -la
-          python3.11 -m pip install .
+          sudo -H python3.11 -m pip install .
 
   # validate-pep8:
   #   runs-on: self-hosted

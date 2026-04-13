@@ -1,4 +1,4 @@
 # Testing Requirements
-pytest==8.3.2
+pytest==9.0.3
 ipdb==0.13.13
 flake8==5.0.4
